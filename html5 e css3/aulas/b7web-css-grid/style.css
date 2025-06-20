@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    background-color: #CCCCCC;
+    grid-template-columns: repeat(3, 1fr); /* unidade fr: fração do espaço disponível do grid */
+    grid-gap: 10px;
+
+    /* grid-template-columns: repeat(5, minmax(100px, 300px)); */
+
+    /* define a altura padrão de todas as linhas */
+    /* grid-auto-rows: minmax(50px, auto);
+
+    /*
+    repeat(3, 1fr) = cria 3 colunas com o mesmo tamanho
+    100px repeat(3, 1fr) 200px = cria 5 colunas, uma de 100px, 3 idênticas e uma de 200px
+    3 colunas de 100px = grid-template-columns: 100px 100px 100px
+    2 colunas automáticas = grid-template-columns: auto auto
+    praticamente a mesma coisa do columns: grid-template-rows
+    */
+    /* grid-gap: 10px 10px; /* substitui as duas linhas abaixo
+    grid-column-gap: 10px; /* espaçamento entre colunas
+    grid-row-gap: 10px; /* espaçamento entre linhas */
+}
+
+.item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* item 1 ocupando toda a linha */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* item 3 ocupando duas linhas e duas colunas, nesse caso obrigadtoriamente tem que informar a posição da coluna que o item deve estar */
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+/* item 8 ocupando duas linhas */
+.item8 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* ou grid-colum: 3 / 4 */
+    grid-row-start: 5;
+    grid-row-end: 7;
+    /* ou grid-row: 5 / 7 */
+
+    /* span pega os blocos, e não as linhas imaginárias da tabela
+    Exemplo:
+    grid-column 2 / 4   -->   grid-column 2 / span 3 */
+}
+
+/* grid-area é propriedade que resume grid-column e grid-row.
+grid-area: row-start / column-start / row-end / column-end  */

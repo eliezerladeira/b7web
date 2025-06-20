@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+/* vai ser aplicado antes do elemento */
+span::before {
+    content: "->";
+    background-color: #FF0000;
+    border: 1px solid #000;
+}
+
+span::after {
+    content: "<-";
+    background-color: #FF0000;
+    border: 1px solid #000;
+}
+
+.balao {
+    background-color: #0000FF;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after {
+    content: '';
+    display: block;
+    position: absolute;  /* retira do conteúdo */
+    margin-top: 20px;
+    border: 20px solid;
+    border-color: #0000FF transparent transparent transparent;
+}

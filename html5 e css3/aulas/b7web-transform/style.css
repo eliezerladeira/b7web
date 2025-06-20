@@ -1,0 +1,17 @@
+div {
+    background-color: #FF0000;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    transform: skew(10deg, 5deg); /* distorce o elemento */
+
+    /*
+    position: fixed;
+    right: -50px;
+    bottom: 50px;
+    transform: rotate(90deg); gira 90 graus em sentido horário */
+
+    /* transform: scale(0.5); metade do tamanho
+    transform: scale(1.1); aumenta em 10%
+    transform: scale(2.1); aumenta a escala horizontal e mantém a vertical */
+}

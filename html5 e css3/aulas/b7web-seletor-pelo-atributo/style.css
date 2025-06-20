@@ -1,0 +1,41 @@
+input, a {
+    display: block;
+}
+
+/* seleciona a partir do atributo do elemento
+atributo sempre entre chaves, podendo ser combinado
+Exemplo: input [required] */
+[required] {
+    background-color: #FF0000;
+}
+
+input[type=password] {
+    background-color: #FF00FF;
+}
+
+input[name="usuario"] {
+    background-color: #FFFF00;
+}
+
+/* identificando por pedaço do conteúdo do atributo*/
+a[href*="economia"] {
+    background-color: #FFE4C4;
+}
+
+a[href*="futebol"] {
+    background-color: #0000FF;
+}
+
+/* selecionando itens que começam com determinado valor */
+a[href^="https:"] {
+    background-color: #00FF00;
+}
+
+a[href^="http:"] {
+    background-color: #0F0F0F;
+}
+
+/* seleção baseada no final */
+a[href$="html"] {
+    background-color: #D2691E;
+}

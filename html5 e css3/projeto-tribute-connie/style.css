@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box; /*If you set box-sizing: border-box; on an element, padding and border are included in the width and height. Neste caso, todos os boxes se manterão responsivos*/
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');/*font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');/*font-family: 'Meow Script', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');/*font-family: 'Montserrat', sans-serif;*/
+
+:root {
+    --fonte1: 'Playfair Display', serif;
+    --fonte_citacao: 'Meow Script', cursive;
+    --fonte_corpo: 'Montserrat', sans-serif;
+}
+
+
+
+
+article {
+    font-family: var(--fonte_corpo);
+    font-size: 18px;
+    padding: 30px;
+}
+
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;   
+}
+.members, .discography {
+    padding: 10px 30px 10px 50px;
+    width: 50%;
+    line-height: 35px;
+}
+
+.members ul, .discography ul {
+    list-style:disc url(images/music.png);
+}
+
+.music li {margin-bottom:10px;}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes_sociais ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.quote p {
+    text-align: center;
+    margin: center;
+    font-family: var(--fonte_citacao);
+    font-size: 30px;
+    line-height: 32px;
+}
+
+blockquote {
+    padding: 20px;
+}
+

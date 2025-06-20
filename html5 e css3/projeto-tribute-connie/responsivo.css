@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@media screen and (max-width: 900px){
+    .background {
+        max-width: 100%; /*é melhor sempre usar medida flexível, do que fixa*/
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .container {/*suporte*/
+        /*flex-direction: row;*/
+        flex-direction: column;
+    }
+
+    .members,
+    .discography { /*suporte*/
+        width: 100%; /*distribui as linhas na largura total*/
+    }
+    .title {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 17px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+}

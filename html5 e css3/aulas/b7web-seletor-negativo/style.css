@@ -1,0 +1,4 @@
+/* colore todos de vermelho, exceto as tags p dentro de body */
+body :not(p) {
+    background-color: #FF0000;;
+}

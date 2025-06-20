@@ -1,0 +1,16 @@
+div {
+    background-color: #0000FF;
+    width: 100px;
+    height: 100px;
+}
+
+/* arredondando somente as bordas da primeira e da última div */
+div:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+div:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

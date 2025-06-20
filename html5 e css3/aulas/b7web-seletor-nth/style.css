@@ -1,0 +1,10 @@
+/* selecionar um item específico, independente de estar no começo ou no fim */
+/* selecionando segundo item (no css começa pelo 1) */
+div:nth-child(2) {
+    background-color: #FF0000;;
+}
+
+/* selecionando do fim para o começo */
+div:nth-last-child(2) {
+    background-color: #FF00FF;;
+}

@@ -1,0 +1,10 @@
+/* primeira letra */
+p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* primeira linha */
+p::first-line {
+    background-color: #FFFF00;
+}

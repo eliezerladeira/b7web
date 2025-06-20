@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin: auto;
+    width: 300px;
+    border: 1px solid #CCCCCC;
+}
+
+table thead {
+    background-color: #CCCCCC;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tbody tr:hover {
+    background-color: #EEEEEE;
+}
+
+/* odd: ímpar  -  even: par */
+tbody tr:nth-child(odd) {
+    background-color: #ADFF2F;
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    /* dessa forma, a div tem as medidas de 220px x 220px,
+    somando a div mais a borda */
+    width: 200px;
+    height: 200px;
+    background-color: #FF0000;
+    border: 10px solid #00FF00;
+
+    /* o tamanho do box deve ser do tamanho do conteúdo, ou seja,
+    não inclui border, padding e margin
+    box-sizing: content-box; */
+
+    /* o tamanho do box deve ser do tamanho do conteúdo, ou seja,
+    inclui border e margin (ele diminui o tamanho da div automaticamente,
+    ou seja, width e height neste caso ficam com 180px 
+    Normalmente é colocado no início do css
+    box-sizing: border-box; */
+}
